@@ -1,3 +1,5 @@
+console.log("hello");
+
 class Animal {
 	constructor(species, noise) {
 		this.species = species;
@@ -37,9 +39,6 @@ class Weasel extends WildAnimal {
 	get color() {
 		return this._color;
 	}
-	makeNoise() {
-		return `${super(makeNoise)} \n And can speak like a human`;
-	}
 }
 
 class Dog extends Domestic {
@@ -63,6 +62,6 @@ class Cat extends Domestic {
 		return this.breed;
 	}
 	makeNoise() {
-		super(makeNoise);
+		super.makeNoise();
 	}
 }
